@@ -1,0 +1,212 @@
+body{
+
+    background: url(images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Ubuntu', sans-serif;
+    /*align-items: center; /*vertical alignment*/
+    display: grid;
+    /*justify-content: center;/*horizontal alignment*/
+    place-items: center;/*if display is set as grid*/
+    margin: 0;
+    /*padding-right: 10%;*/
+    height: 100vh;
+    /*margin-right: 10%;
+    margin-left: 5%;*/
+}
+.attribution {
+    display: flex;
+    align-self: end; /* The trick */
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .6fr, 2fr;
+    grid-template-areas: "img"
+                        "cont-2";
+
+   max-width: 30%;
+    border-radius: 9px;
+    /*margin-top: 50px;*/
+    /*max-height: 100vh;*/
+    background-color: brown;
+    /*margin-left: 100px;*/
+    box-shadow: 0px 0px 10px -1px rgba(56, 54, 54, 0.31);
+
+}
+/*.attribution{
+    display: flex;
+    align-self: end;
+}*/
+
+.img-container{
+        grid-area: img;
+        /*align-items: center;*/
+        background-color: brown;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        /*width:100%;*/
+        background: url(images/illustration-hero.svg);
+        height: 200px;
+        box-shadow: 0px 0px 10px -1px rgba(56, 54, 54, 0.31);
+}
+/* .img-container img{
+    border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        object-fit: contain;
+        width: 455.75px;
+        height: 224px;
+        box-shadow: 0px 0px 10px -1px rgba(56, 54, 54, 0.31);
+        transform: scaleX(1.1);
+} */
+
+.cont-2{
+    grid-area: cont-2;
+    text-align: center;
+    background-color: white;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    /*height: 60vh;*/
+}
+#annual{
+        display: flex;
+        background-color: hsl(225, 100%, 98%);
+        margin-bottom: 33px;
+        width: 82%;
+        border-radius: 9px;
+        margin-left: 28px;
+        padding: 3px;
+        box-shadow: 0px 0px 10px -1px rgba(164, 160, 160, 0.31);
+}
+
+#annual img{
+    width:40px;
+    height:40px;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-top: 5px;
+    margin-left: 4px;
+    
+    
+}
+h6{
+    margin-top: 33px;
+    margin-left: 100px;
+    padding-left:50px ;
+    transition: all .3s;
+    
+}
+h6 a:hover{
+    text-decoration: none;
+    color:hsl(228, 29%, 62%);
+    
+}
+.inner-flex {
+        padding-right: 10px;
+}
+#first{
+    margin-bottom: 3px;
+    padding-bottom: 2px;
+    font-weight: 900;
+}
+#secnd{
+    margin-top: 0px;
+    color: hsl(224, 23%, 55%);
+}
+
+button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 9px;
+    border: none;
+    padding: 13px;
+    width: 82%;
+    text-align: center;
+    transition: all .40s;
+    box-shadow: 0px 0px 10px -1px rgba(39, 37, 37, 0.31);
+}
+button:hover{ 
+    background-color: hsl(245, 56%, 62%);
+    cursor: pointer;
+}
+p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+   padding: 13px 35px;
+   margin-left: 14px;
+   margin-right: 14px;
+}
+#cancel{
+    font-weight: 900;
+    padding: none;
+    font-size: 14px;
+    transition: all .30s;
+}
+#cancel:hover{
+    cursor: pointer;
+    color: black;
+}
+h2{
+    margin-top: 40px;
+    margin-bottom: none;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:550px) {
+    body{
+       background-size: contain;
+       margin-right: 100px;
+       padding-right: 50px;
+    }
+    .main{
+        max-width: 60%;
+        grid-template-columns: 1.3fr;
+    grid-template-rows: .5fr, 1.8fr;
+    
+    }
+    #annual{
+        width:90%;
+        margin-left: 10px;
+        padding: 2px;
+    }
+    h6{
+        
+        margin-left: 20px;
+        padding-left:12px ;
+        transition: all .3s;
+        
+    }
+    .img-container{
+        grid-area: img;
+        /*align-items: center;*/
+        background-color: brown;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        /*width:100%;*/
+        background-image: url(images/illustration-hero.svg);
+        width: 280px;
+        box-sizing: content-box;
+       
+        box-shadow: 0px 0px 10px -1px rgba(56, 54, 54, 0.31);
+}
+.inner-flex {
+    padding: 8px;
+}
+p{
+    font-size: 14px;
+   padding: 11px 23px;
+   margin-left: 10px;
+   margin-right: 10px;
+   line-height: 20px;
+}
+button{
+    
+    padding: 10px;
+    width: 78%;
+}
+.attribution {
+    visibility: hidden;
+}
+
+}
